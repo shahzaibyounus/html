@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Store Locations - First Choice - First Fashion</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100 storelocationspage">
+  <section class="alertsection">
+    <div class="row bg-dark text-light pt-2 fixed-top">
+      <div class="col-md-6 pl-5">
+        <p style="font-size: small;">Welcome to First Fashion!</p>
+      </div>
+      <div class="col-md-6 text-right pr-5 dlvalrt">
+        <p style="font-size: small;">Free Delievery Over 1500Rs!</p>
+      </div>
+    </div>
+  </section>
+  <nav class="navbar firstnav fixed-top bg-light navbar-expand-md navbar-light" style="margin-top: 38px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="4x/First-Fashion-horizontal 1.png" alt=""></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item trackitem">
+            <a class="nav-link tracktext" aria-current="page" href="track_order.html"><img class="trackorder" src="img/truck.png"
+                alt="">
+              <p>TRACK ORDER</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="favorites.html"><img class="lefticons" src="img/heart.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="cart.html"><img class="lefticons" src="img/cart.png" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="sign-in.html"><img class="lefticons" src="img/user.png" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" style="margin-top: 100px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto" style="margin-top: 1rem;">
+        <li class="nav-item">
+          <a class="nav-link new-arrival text-uppercase" href="new_arrival.html">New Arrival</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Women
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-uppercase" href="women/kurti.html">Kurti</a>
+            <a class="dropdown-item text-uppercase" href="women/western.html">Western</a>
+            <a class="dropdown-item text-uppercase" href="women/jewellery.html">Jewellery</a>
+            <a class="dropdown-item text-uppercase" href="women/shawls.html">Shawls</a>
+            <a class="dropdown-item text-uppercase" href="women/bags.html">Bags</a>
+            <a class="dropdown-item text-uppercase" href="women/footwear.html">Footwear</a>
+            <a class="dropdown-item text-uppercase" href="women/watches.html">Watches</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Men
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-uppercase" href="men/kurta.html">Kurta</a>
+            <a class="dropdown-item text-uppercase" href="men/western.html">Western</a>
+            <a class="dropdown-item text-uppercase" href="men/waist-coat.html">Waistcoat</a>
+            <a class="dropdown-item text-uppercase" href="men/footwear.html">Footwear</a>
+            <a class="dropdown-item text-uppercase" href="men/watches.html">Watches</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Kids
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-uppercase" href="kids/clothes.html">Clothes</a>
+            <a class="dropdown-item text-uppercase" href="kids/shorts.html">Shorts</a>
+            <a class="dropdown-item text-uppercase" href="kids/watches.html">Wathces</a>
+            <a class="dropdown-item text-uppercase" href="kids/footwear.html">Footwear</a>
+            <a class="dropdown-item text-uppercase" href="kids/toys.html">Toys</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Makeup
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-uppercase" href="makeup/lipstick.html">Lipstick</a>
+            <a class="dropdown-item text-uppercase" href="makeup/eye-shade.html">Eye Shade</a>
+            <a class="dropdown-item text-uppercase" href="makeup/eye-liner.html">Eye Liner</a>
+            <a class="dropdown-item text-uppercase" href="makeup/makeup-kit.html">Makeup Kit</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link text-uppercase dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-uppercase" href="home/bedsheet.html">Bedsheets</a>
+            <a class="dropdown-item text-uppercase" href="home/curtain.html">Cutains</a>
+            <a class="dropdown-item text-uppercase" href="home/carpets.html">Carpet</a>
+            <a class="dropdown-item text-uppercase" href="home/rugs.html">Rugs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ff-choice text-uppercase" href="ff-choice.html">FF Choice</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search any product here" aria-label="Search">
+        <button type="button" class="btn btn-warning"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </nav>
+  <nav aria-label="breadcrumb bg-light" style="margin-top: 8px;">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Store Locations</li>
+    </ol>
+  </nav>
+  <div class="container">
+    <div class="row no-gutters storelocations">
+      <div class="col-md-12">
+        <h2 class="headingsidepages text-uppercase text-center">Store Locations</h2>
+        <div class="image responsive">
+          <img class="image-fluid" src="img/store.jpg" alt="" style="max-width: 100%;">
+        </div>
+        <h3 class="text-uppercase text-center">Karachi</h3>
+        <details>
+          <summary>Main Outlet - North Nazimabad</summary>
+          <p class="text-left">
+            SD-1, Block A North Nazimabad Town, Karachi, Karachi City, Sindh 74700, Pakistan <br> Tel: +92 21 111 324
+            466 ext. 101
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.1393054808664!2d67.03085831597099!3d24.92732384871135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2sAptech%20Computer%20Education%20North%20Nazimabad%20Center!5e0!3m2!1sen!2s!4v1650415664853!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>FB Area</summary>
+          <p class="text-left">
+            Mezzanine Floor, Rajput Twin Tower، Main Shahrah-e-Pakistan, Federal B Area Block 10 Karachi, 75950,
+            Pakistan <br> Tel: +92 21 111 324 466 ext. 104
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14474.548336119165!2d67.05837409932819!3d24.910357861918225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f684a577aa1%3A0x8eef9ba9639151a5!2sAPTECH%20Computer%20Education%20F.B%20.Area!5e0!3m2!1sen!2s!4v1650480839818!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Gulshan-e-Iqbal</summary>
+          <p class="text-left">
+            A-486 Allama Shabbir Ahmed Usmani Rd, Block 6 Gulshan-e-Iqbal, Karachi, Karachi City, Sindh, Pakistan <br>
+            Tel: +92 21 111 324 466 ext. 121
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14474.548336119165!2d67.05837409932819!3d24.910357861918225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338caa5ac57cb%3A0x2c4b1fc512ab6bb!2sAptech%20Computer%20Education%20Gulshan-e-Iqbal%20Campus!5e0!3m2!1sen!2s!4v1650480954471!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>SITE</summary>
+          <p class="text-left">
+            Habib Garden Plot 1E, 3/1, Nazimabad No 1،, near Nazimabad Underpass, Karachi, 74400, Pakistan <br> Tel: +92
+            21 111 324 466 ext. 113
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14474.53786653168!2d67.01931246977539!3d24.910447100000013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fb94eb666b5%3A0x6e383e3adce474a4!2sAptech%20Computer%20Education%20Site%20Center!5e0!3m2!1sen!2s!4v1650481073982!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Tariq Road</summary>
+          <p class="text-left">
+            C1 - Tariq Center Tariq Rd, P.E.C.H.S Block 2 Block 2 PECHS, Karachi, Karachi City, Sindh, Pakistan <br>
+            Tel: +92 21 111 324 466 ext. 117
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14479.046968014554!2d67.0504416697754!3d24.871985799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33eeca8432bf5%3A0x81dece3730c9b1c5!2sAptech%20Computer%20Education%20Tariq%20Road!5e0!3m2!1sen!2s!4v1650481553553!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Sharah-e-Faisal</summary>
+          <p class="text-left">
+            Progressive Center, suite # 202-203, 30-A Shahrah-e-Faisal, Karachi, 75400, Pakistan <br> Tel: +92 21 111
+            324 466 ext. 109
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14480.067667928826!2d67.06564306977536!3d24.863271799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1650481739612!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>University Road</summary>
+          <p class="text-left">
+            First Floor, Bell Arcade, Opposite to University of Karachi, Main Main University Rd, Block 1
+            Gulistan-e-Johar, Karachi, Karachi City, Sindh, Pakistan <br> Tel: +92 21 111 324 466 ext. 129
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.247778439358!2d67.10814566977537!3d24.92995960000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338c0f3713f79%3A0xd93ccefc56ffe37e!2sAptech%20University%20Road%20Center!5e0!3m2!1sen!2s!4v1650482203697!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <h3 class="text-uppercase text-center">Lahore</h3>
+        <details>
+          <summary>Main Outlet of Lahore - Johar Town</summary>
+          <p class="text-left">
+            Khayaban-e-Firdousi, Block E Phase 1 Johar Town, Lahore, Punjab, Pakistan <br> Tel: +92 21 111 324 466 ext.
+            131
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27217.080812919714!2d74.29282574921953!3d31.49297010251241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391903e287deb3d9%3A0xdc2277fb90c8e155!2sAptech%20Computer%20Education!5e0!3m2!1sen!2s!4v1650482345723!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Muslim Town</summary>
+          <p class="text-left">
+            Noon Ave, Muslim Town, Lahore, Punjab 54000, Pakistan <br> Tel: +92 21 111 324 466 ext. 134
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27217.080812919714!2d74.29282574921953!3d31.49297010251241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190487e5651619%3A0x2235d897fcdafe3a!2sAptech%20Computer%20Education!5e0!3m2!1sen!2s!4v1650482427858!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Johar Town II</summary>
+          <p class="text-left">
+            E, Commercial Plaza no. 415, Near Allah Hoo Chowk, Block E Phase 1 Johar Town, Lahore, Punjab 54570,
+            Pakistan <br> Tel: +92 21 111 324 466 ext. 132
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27217.080812919714!2d74.29282574921953!3d31.49297010251241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919030569b32231%3A0xc8aa4be66ee975b7!2sAptech%20Learning%20Johar%20Town!5e0!3m2!1sen!2s!4v1650482493546!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <h3 class="text-uppercase text-center">Others</h3>
+        <details>
+          <summary>Rawalpindi</summary>
+          <p class="text-left">
+            2nd Floor, Wali Plaza، Chandni Chowk Flyover, opposite KFC, Commercial Market، Rawalpindi, Pakistan <br>
+            Tel: +92 21 111 324 466 ext. 102
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26575.4838651801!2d73.05281833955078!3d33.632914799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9520b9992ff1%3A0xea86319ee18df8f!2sAptech%20Rawalpindi!5e0!3m2!1sen!2s!4v1650482944849!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Gujranwala</summary>
+          <p class="text-left">
+            Delta Road, Link Ghulam Dastagir Khan Rd, Satellite Town, Gujranwala, 52250, Pakistan <br> Tel: +92 21 111
+            324 466 ext. 103
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27018.415367365124!2d74.18485873955078!3d32.16913220000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391f29f55e31caed%3A0xb91cc2abac39dbb8!2sAptech%20Learning%20Gujranwala!5e0!3m2!1sen!2s!4v1650483021603!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Faisalabad</summary>
+          <p class="text-left">
+            Aptech canal road center, chenab college , west, Canal Expy, near royalton hotel, Faisalabad, 38000,
+            Pakistan <br> Tel: +92 21 111 324 466 ext. 105
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27237.713214190822!2d73.09097353955077!3d31.42200080000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39226900322f3bc3%3A0xa5c3a90a3c45cf21!2sAptech%20Computer%20Learning!5e0!3m2!1sen!2s!4v1650483100105!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Sialkot</summary>
+          <p class="text-left">
+            Railway Road, Sialkot, Punjab, Pakistan <br> Tel: +92 21 111 324 466 ext. 106
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26920.06996471704!2d74.52827073955078!3d32.499195400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391eea5f8f1ed341%3A0xe61e6909af7162c6!2sAptech%20Computer%20Education!5e0!3m2!1sen!2s!4v1650483210826!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Sargodha</summary>
+          <p class="text-left">
+            1st Floor, 699-A Haider Esquire, Fatima Jinnah Rd, New Satellite Town, Sargodha, Punjab, Pakistan <br> Tel:
+            +92 21 111 324 466 ext. 107
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27046.117973618682!2d72.68119943955078!3d32.07561110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392177d7ac5be7a7%3A0x1acd17cbd9e72e66!2sAptech%20Learning%20Sargodha%20Centre!5e0!3m2!1sen!2s!4v1650483301768!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Bhawalpur</summary>
+          <p class="text-left">
+            2-A Rafi Qamar Road, Satellite Town Garden Area, Bahawalpur, Punjab 63100, Pakistan <br> Tel: +92 21 111 324
+            466 ext. 108
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27811.331985574325!2d71.69251043955076!3d29.387369699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90e5458f4e3d%3A0x3fe3e57cda77e9f2!2sAptech%20Computer%20Education%20Bahawalpur!5e0!3m2!1sen!2s!4v1650483365247!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+        <details>
+          <summary>Hyderabad</summary>
+          <p class="text-left">
+            Restaurant، Plot # 16, Anum Center, 1st Floor, Defence Commercial Area, Near Mirchi 360، Defence Housing
+            Society Defence, Hyderabad, Sindh 71000, Pakistan <br> Tel: +92 21 111 324 466 ext. 111
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28836.912334411714!2d68.33221263955078!3d25.384248700000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c7091dbec9a17%3A0xda868aa47bcd1e33!2sAptech%20Defence%20Hyderabad!5e0!3m2!1sen!2s!4v1650483437121!5m2!1sen!2s"
+            width="100%" height="450px" style="border: 2px solid black;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </details>
+      </div>
+    </div>
+  </div>
+  <footer class="ff-footer mt-auto">
+    <div>
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+          <img class="footer-logo" src="img/Footer-Logo.png" alt="">
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="img/Facebook.png" alt=""></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank"><img src="img/Twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="img/Instagram.png" alt=""></a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><img src="img/WhatsApp.png" alt=""></a></li>
+            <li><a href="https://www.YouTube.com/" target="_blank"><img src="img/YouTube.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footnav">
+          <ul class="justify-content-center">
+            <li>
+              <p><a href="about.html">About Us</a></p>
+            </li>
+            <li>
+              <p><a href="customer_care.html">Customer Care</a></p>
+            </li>
+            <li>
+              <p><a href="store_locations.html">Store Locations</a></p>
+            </li>
+            <li>
+              <p><a href="terms_of_service.html">Terms & Conditions</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 footcont">
+          <ul class="justify-content-center">
+            <li>
+              <p><a href="tel:+92021111324466">+92 21 111 324 466</a></p>
+            </li>
+            <li>
+              <p><a href="mailto:service@firstfashion.com?subject=Enter Your Title">service@firstfashion.com</a></p>
+            </li>
+            <li>
+              <address>Lab # 17, First Floor,</address>
+            </li>
+            <li>
+              <address>Aptech North Nazimabad.</address>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <p class="copyright">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="index.html"
+              target="_blank">First Fashion</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <script>
+    let mybutton = document.getElementById("btn-back-to-top");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 70 ||
+        document.documentElement.scrollTop > 60
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    mybutton.addEventListener("click", backToTop);
+
+    function backToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>
